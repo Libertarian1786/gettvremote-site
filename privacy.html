@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy · TV Remote</title>
-<meta name="description" content="TV Remote has no account, no ads and no analytics. Saved TVs and settings stay on your iPhone; pairing keys and the tokens your TVs issue live in the iPhone&#x27;s Keychain and are only ever sent back to the TV that issued them.">
+<meta name="description" content="TV Remote has no account, no ads and no analytics. Saved TVs and settings stay on your iPhone; pairing keys and TV tokens are kept in the iPhone&#x27;s Keychain and sent only to your TV&#x27;s address on your own Wi-Fi.">
 <!-- Smart App Banner. Uncomment and fill app-id the day the App Store record
      exists; a banner pointing at a non-existent id renders as a dead bar.
 <meta name="apple-itunes-app" content="app-id=APP_ID"> -->
@@ -17,7 +17,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="TV Remote">
 <meta property="og:title" content="Privacy Policy · TV Remote">
-<meta property="og:description" content="TV Remote has no account, no ads and no analytics. Saved TVs and settings stay on your iPhone; pairing keys and the tokens your TVs issue live in the iPhone&#x27;s Keychain and are only ever sent back to the TV that issued them.">
+<meta property="og:description" content="TV Remote has no account, no ads and no analytics. Saved TVs and settings stay on your iPhone; pairing keys and TV tokens are kept in the iPhone&#x27;s Keychain and sent only to your TV&#x27;s address on your own Wi-Fi.">
 <meta property="og:url" content="https://www.gettvremote.com/privacy.html">
 <meta property="og:image" content="https://www.gettvremote.com/img/icon.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -29,7 +29,7 @@
 </header>
 <main>
 <h1>TV Remote Privacy Policy</h1>
-<p><em>Effective: [LAUNCH_DATE]</em></p>
+<p><em>Effective: September 23, 2026</em></p>
 <h2>The short version</h2>
 <p>TV Remote has no account, no sign-in and no server of its own. It finds your Roku, Amazon Fire TV, Google TV, Samsung, LG or Vizio TV on your own Wi-Fi and sends it the button you press, directly, over your local network. There are no ads, no analytics and no tracking SDKs anywhere in the app, and nothing about your use of it is sent to us.</p>
 <h2>What the app does on your network</h2>
@@ -41,11 +41,11 @@
 <p><strong>App settings</strong>, including which TV you last used and the timing of the in-app review prompt, so it is not shown too often. For Vizio TVs, the app also keeps a random pairing identifier it created itself (not tied to you or to your iPhone&#x27;s hardware) and which of play or pause it sent last.</p>
 <p><strong>Pairing keys and tokens</strong>, all in the iOS Keychain on your iPhone:</p>
 <ul>
-<li>For a Fire TV, the app generates its own RSA key pair on your iPhone; you approve it on the TV itself, the same way any ADB tool pairs with an Android device.</li>
-<li>For a Google TV or Android TV, the app generates its own key and certificate on your iPhone; you pair it by typing the code your TV shows. The name the TV lists for it is &quot;Remote&quot; plus four characters taken from that key - nothing about you.</li>
+<li>For a Fire TV, the app creates its own RSA key pair on your iPhone; you approve it on the TV itself, the same way any ADB tool pairs with an Android device.</li>
+<li>For a Google TV or Android TV, the app creates its own key and certificate on your iPhone; you pair it by typing the code your TV shows. The name the TV lists for it is &quot;TV Remote&quot; plus four characters taken from that key - nothing about you.</li>
 <li>A Samsung, LG or Vizio TV issues a token (LG calls it a client key) after you allow the app on the TV or type its PIN.</li>
 </ul>
-<p>These keys and tokens are created on and stay on your iPhone. A token is only ever sent to the TV that issued it, and removing a TV in the app deletes its token. None of it is sent to us.</p>
+<p>Private keys never leave your iPhone: a Fire TV or Google TV only ever sees the public half of the key it approved. Tokens stay in your iPhone&#x27;s Keychain and are sent only to your TV&#x27;s address on your own Wi-Fi, when the app talks to that TV. Before sending a Samsung or LG token, the app checks that it is still talking to the same TV. A Vizio token goes with each command to the TV&#x27;s saved address, so if your router later gives that address to another device that answers like a Vizio TV, a command could reach that device before the app notices. None of this is ever sent to us.</p>
 <p><strong>The widget and Control Center/Siri actions.</strong> The Home Screen and Lock Screen widget, Control Center buttons (iOS 18 and later), and Siri, Shortcuts and Action Button actions all read this same on-device data through an App Group, which is Apple&#x27;s mechanism for an app and its widget to share local storage on the same iPhone. This sharing stays on your device; none of it reaches us.</p>
 <h2>What we do not do</h2>
 <ul>
@@ -63,8 +63,8 @@
 <h2>Your choices</h2>
 <p>Because TV Remote holds no account and sends us no personal data, there is nothing for us to look up, export or delete on request. To remove what the app holds on your phone:</p>
 <ul>
-<li>Remove a saved TV in the app to delete its stored details and the token that TV issued.</li>
-<li>Delete the app to remove its on-device storage, including saved TVs, settings, pairing keys and tokens. iOS may keep Keychain items until the device is erased - that is standard iOS behavior for any app that uses the Keychain, not something TV Remote controls.</li>
+<li>Remove a saved TV in the app, or replace your one free TV with another, to delete that TV&#x27;s stored details and its token.</li>
+<li>Delete the app to remove its saved TVs and settings. iOS can keep an app&#x27;s Keychain items after the app is deleted; if you install TV Remote again, it erases any keys and tokens left from before the first time it opens.</li>
 <li>Turn off Local Network access for the app at any time in iOS Settings; discovery and control simply stop working until you allow it again.</li>
 </ul>
 <h2>Changes</h2>
@@ -81,7 +81,7 @@
     </div>
     <div>
       <p>TV Remote is an independent app, not affiliated with, endorsed by or sponsored by Roku, Amazon, Google, Samsung, LG or Vizio.</p>
-      <p class="disclaimer">No account. No ads. No analytics. Nothing leaves your phone.</p>
+      <p class="disclaimer">No account. No ads. No analytics. Your presses go straight to your TV.</p>
       <p>&copy; 2026 TV Remote</p>
     </div>
   </div>

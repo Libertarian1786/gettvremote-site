@@ -64,7 +64,8 @@
     <div>
       <span class="num">2</span>
       <h3>Approve it once</h3>
-      <p>A Roku needs nothing extra. A Fire TV needs Developer options and ADB
+      <p>A Roku on Roku OS 14.1 or later needs <em>Control by mobile apps</em>
+      turned on. A Fire TV needs Developer options and ADB
       debugging turned on first &mdash; a setting you control and can turn
       off again at any time. Google TV, Samsung, LG and Vizio just need one
       tap, code or PIN on the TV screen the first time you connect.</p>
@@ -87,11 +88,11 @@
 <thead><tr><th>TV</th><th>Works today</th><th>What it takes</th></tr></thead>
 <tbody>
 <tr><td>Roku (players and Roku TVs)</td><td class="yes">Yes</td><td>Found automatically on your Wi-Fi, or add it by IP address. On Roku OS 14.1 and later, turn on <em>Settings &gt; System &gt; Advanced system settings &gt; Control by mobile apps</em>.</td></tr>
-<tr><td>Amazon Fire TV (Fire OS)</td><td class="yes">Yes</td><td>Found automatically on your Wi-Fi once ADB debugging is on, or add it by IP address. Turn on <em>Developer options &gt; ADB debugging</em>, then choose Allow when the TV asks to allow USB debugging. Volume, mute and channel keys depend on your TV's own HDMI-CEC support.</td></tr>
-<tr><td>Google TV and Android TV</td><td class="yes">Yes &middot; New</td><td>Found automatically on your Wi-Fi, or add it by IP address. Nothing to turn on: the first time, your TV shows a code and you type it into this iPhone. New in this version and not yet confirmed on every model &mdash; if something doesn't work on your TV, tell us and we'll fix it.</td></tr>
-<tr><td>Samsung (2016 and newer)</td><td class="yes">Yes &middot; New</td><td>Found automatically on your Wi-Fi, or add it by IP address. Choose Allow on the TV; if it asks every time, set <em>Device Connection Manager &gt; Access Notification</em> to First Time Only in the TV's settings. New in this version and not yet confirmed on every model &mdash; if something doesn't work on your TV, tell us and we'll fix it.</td></tr>
-<tr><td>LG (webOS)</td><td class="yes">Yes &middot; New</td><td>Turn on <em>LG Connect Apps</em> in the TV's network settings, then accept the request on the TV. New in this version and not yet confirmed on every model &mdash; if something doesn't work on your TV, tell us and we'll fix it.</td></tr>
-<tr><td>Vizio (SmartCast)</td><td class="yes">Yes &middot; New</td><td>Found automatically on your Wi-Fi, or add it by IP address. The first time, your TV shows a PIN and you type it into this iPhone. New in this version and not yet confirmed on every model &mdash; if something doesn't work on your TV, tell us and we'll fix it.</td></tr>
+<tr><td>Amazon Fire TV (Fire OS)</td><td class="yes">Yes</td><td>Found automatically on your Wi-Fi once ADB debugging is on, or add it by IP address. Turn on <em>Developer options &gt; ADB debugging</em>, then choose Allow when the TV asks to allow USB debugging. Volume and mute reach your TV over HDMI-CEC; channel keys only work in live-TV apps that use them.</td></tr>
+<tr><td>Google TV and Android TV</td><td class="yes">Yes &middot; New</td><td>Found automatically on your Wi-Fi, or add it by IP address. Nothing to turn on: the first time, your TV shows a code and you type it into this iPhone. New in this version and not yet confirmed on every model &mdash; if something doesn't work on your TV, tell us and we'll look into it.</td></tr>
+<tr><td>Samsung (2016 and newer)</td><td class="yes">Yes &middot; New</td><td>Found automatically on your Wi-Fi, or add it by IP address. Choose Allow on the TV; if it asks every time, set <em>Device Connection Manager &gt; Access Notification</em> to First Time Only in the TV's settings. New in this version and not yet confirmed on every model &mdash; if something doesn't work on your TV, tell us and we'll look into it.</td></tr>
+<tr><td>LG (webOS)</td><td class="yes">Yes &middot; New</td><td>Turn on <em>LG Connect Apps</em> in the TV's network settings, then accept the request on the TV. New in this version and not yet confirmed on every model &mdash; if something doesn't work on your TV, tell us and we'll look into it.</td></tr>
+<tr><td>Vizio (SmartCast)</td><td class="yes">Yes &middot; New</td><td>Found automatically on your Wi-Fi, or add it by IP address. The first time, your TV shows a PIN and you type it into this iPhone. New in this version and not yet confirmed on every model &mdash; if something doesn't work on your TV, tell us and we'll look into it.</td></tr>
 <tr><td>Fire TV on Vega OS (e.g. Fire TV Stick 4K Select)</td><td class="no">No</td><td>Not supported in this version &mdash; these models don't have the ADB debugging setting this app needs.</td></tr>
 <tr><td>Samsung (2014-2015 models)</td><td class="no">No</td><td>These older models aren't supported.</td></tr>
 <tr><td>Apple TV</td><td class="no">No</td><td>Not needed &mdash; your iPhone already has an Apple TV remote in Control Center.</td></tr>
@@ -112,8 +113,9 @@
     <li><strong>Control Center buttons</strong> &mdash; on iOS 18 and later.</li>
     <li><strong>Siri &amp; Action Button</strong> &mdash; plus Shortcuts automations.</li>
     <li><strong>Swipe touchpad</strong> &mdash; swipe to move, tap for OK.</li>
-    <li><strong>Keyboard text entry</strong> &mdash; type instead of hunting letters with the D-pad.</li>
-    <li><strong>Extra keys</strong> &mdash; rewind, fast-forward, instant replay and options.</li>
+    <li><strong>Keyboard text entry</strong> &mdash; type instead of hunting letters with the D-pad, on Roku, Fire TV, Samsung and LG.</li>
+    <li><strong>Extra keys</strong> &mdash; rewind, fast-forward and options, plus instant replay on Roku.</li>
+    <li><strong>Color themes</strong> &mdash; five more colors, each with a matching app icon.</li>
   </ul>
   <p class="section-lede">Premium never unlocks support for a TV brand the
   free app can't already control &mdash; it only adds what's above.</p>
@@ -149,9 +151,10 @@
     models on Amazon's Vega OS and Samsung TVs from 2014-2015 aren't
     supported &mdash; the table above is the honest list of what does.</li>
     <li><strong>It will not create an account for you.</strong> No sign-up,
-    no login, no email address collected &mdash; ever.</li>
+    no login, no email address collected.</li>
     <li><strong>It will not track you.</strong> No analytics SDK, no
-    advertising SDK, no data sent anywhere by the app.</li>
+    advertising SDK and no server of ours: the app talks only to your TVs,
+    and to Apple when you buy.</li>
   </ul>
 </section>
 
@@ -162,7 +165,7 @@
     <p>Yes &mdash; new in this version. TV Remote now supports Samsung (2016
     and newer) and LG (webOS), alongside Google TV, Android TV and Vizio.
     They're new and not yet confirmed on every model; if something doesn't
-    work on your TV, tell us and we'll fix it.</p>
+    work on your TV, tell us and we'll look into it.</p>
   </details>
   <details>
     <summary>Is this a universal remote?</summary>
@@ -184,10 +187,10 @@
   </details>
   <details>
     <summary>Is my data sent anywhere?</summary>
-    <p>No. There's no account, no analytics SDK and no server of ours in this
-    app. Saved TVs and settings stay on your iPhone; pairing keys and the
-    tokens your TVs issue are kept in the iPhone's Keychain and only ever
-    sent to the TV that issued them. See the
+    <p>Only to your TV. There's no account, no analytics SDK and no server of
+    ours in this app, and purchases go through Apple. Saved TVs and settings
+    stay on your iPhone; pairing keys and TV tokens are kept in the iPhone's
+    Keychain and sent only to your TV's address on your own Wi-Fi. See the
     <a href="privacy.html">Privacy Policy</a>.</p>
   </details>
   <details>
@@ -214,7 +217,7 @@
     </div>
     <div>
       <p>TV Remote is an independent app, not affiliated with, endorsed by or sponsored by Roku, Amazon, Google, Samsung, LG or Vizio.</p>
-      <p class="disclaimer">No account. No ads. No analytics. Nothing leaves your phone.</p>
+      <p class="disclaimer">No account. No ads. No analytics. Your presses go straight to your TV.</p>
       <p>&copy; 2026 TV Remote</p>
     </div>
   </div>
